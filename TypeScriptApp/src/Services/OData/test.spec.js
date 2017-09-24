@@ -13,26 +13,6 @@ System.register(["../../TestHelper.spec"], function (exports_1, context_1) {
                 //
                 var spy = jasmine.createSpyObj;
                 var every = TestHelper_spec_1.Test.every;
-                {
-                    var TestCase = (function () {
-                        function TestCase() {
-                        }
-                        return TestCase;
-                    }());
-                    var testcases_1 = [
-                        {
-                            data1: "",
-                            expected: ""
-                        },
-                    ];
-                    describe("", function () {
-                        every(testcases_1, function (index, test) {
-                            it("should ", function () {
-                                expect("").toEqual(test.expected);
-                            });
-                        });
-                    });
-                }
             })();
         }
     };
