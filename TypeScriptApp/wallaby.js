@@ -25,13 +25,13 @@ module.exports = function (wallaby) {
 
       // application (but not specs) loaded via module imports
       {pattern: 'src/**/*+(ts|html|css)', load: false},
-      {pattern: 'src/**/*.spec.ts', ignore: true},
+      {pattern: 'src/**/!(TestHelper).spec.ts', ignore: true},
 
       {pattern: 'testing/**/*+(ts|html|css)', load: false}
     ],
 
     tests: [
-      {pattern: 'src/**/*.spec.ts', load: false}
+      {pattern: 'src/**/!(TestHelper).spec.ts', load: false}
     ],
 
     env: {
